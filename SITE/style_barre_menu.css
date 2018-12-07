@@ -1,0 +1,161 @@
+#bloc_titre {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+   display: block;
+ }
+
+#logo {
+  width : 10%;
+  height: auto;
+}
+
+#barre_menu, .sous_menu_cache {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#barre_menu {
+  display: inline-flex;
+  width: 100%;
+}
+
+.sous_menu {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.sous_menu_cache {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.sous_menu_cache li {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0;
+  transition: all 1s ease-in-out;
+  background: linear-gradient(#44BAFE, #449BFE);
+}
+
+input[type="checkbox"] {
+  display: none;
+  width:100%;
+}
+
+label {
+  display: block;
+  height:2em;
+  cursor: pointer;
+  width:100%;
+  background: linear-gradient(#0CAAED,#0C57ED);
+  box-shadow: inset 0 1px 1px rgba(#fff,0.2);
+}
+
+input:checked + .sous_menu_cache li {
+  height: 2em;
+  padding-top: 0.8em;
+  cursor: pointer;
+  opacity: 1;
+  width: 100%;
+}
+
+.icone {
+  height:1.5em;
+}
+
+/*==================================================================================*/
+
+/*==================================================================================*/
+
+footer {
+  background-color: #0CAAED;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  margin-top:100px;
+}
+
+footer #team  {
+  border: 2px solid black;
+  border-radius: 7px;
+  font-size: 20px;
+  font-family: 'AllStar';
+
+  padding: 7px;
+  margin:auto;
+  position: relative;
+  right: 60px;
+
+
+  text-decoration: none;
+  color : black;
+  background-color: white;
+}
+
+footer #team:hover{
+  background-color: grey;
+}
+
+ footer hr {
+   position: relative;
+   margin: auto ;
+   right:130px;
+ }
+
+footer #facebook {
+  margin: auto 30px auto ;
+  color : black;
+}
+
+footer #twitter {
+  margin: auto 30px auto ;
+  color : black;
+}
+
+footer #phone {
+  margin: auto;
+  position: relative;
+  right: -130px;
+}
+
+footer #at {
+  margin: auto;
+  position:relative;
+  right:395px;
+}
+
+footer #facebook:hover,#twitter:hover {
+  color: white;
+}
+
+.notel {
+  font-family: 'Cooper Black';
+  font-size: 20px;
+  position:relative ;
+  top:35px;
+  left:250px;
+}
+
+.adrmail {
+  font-family: 'Cooper Black';
+  font-size: 20px;
+  position:relative ;
+  top:35px;
+  right: 515px;
+}
+
